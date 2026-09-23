@@ -15,23 +15,12 @@ MORSE is a **compression-aware global context-order search** method for query-co
 
 ## The idea
 
-<p align="center">
-  <img src="assets/morse_information_preemption.png" alt="The paper's ordering-sensitivity distributions and controlled information-preemption pair swap" width="940" />
-</p>
+The repository uses the **original manuscript PDFs** for the core visual explanation:
 
-*Figure from the manuscript.* On identical retrieved contexts, merely changing order can change which gold evidence survives compression. In the illustrated pair-swap, placing a partially relevant non-gold passage first suppresses a later gold sentence; reversing the pair preserves it. The figure illustrates a mechanism, not a universal outcome on every example.
+- [Figure 1 left: ordering-sensitivity statistics (PDF)](assets/figure1_left_stats_2panel.pdf)
+- [Controlled information-preemption pair swap (PDF)](assets/pair_swap_current_figure.pdf)
 
-```mermaid
-flowchart LR
-    Q[Query and retrieved contexts] --> R[Score standalone contexts by reverse query likelihood]
-    R --> A[Reverse evidence-first anchor]
-    Q --> P[K - 1 deterministic global random permutations]
-    A --> C[Run the same sequential compressor for each candidate]
-    P --> C
-    C --> O[Canonicalize each retained output]
-    O --> J[Score each compressed output with J_B]
-    J --> W[Return the highest-scoring candidate]
-```
+Together these figures show that (i) changing context order can substantially change supporting-evidence retention, and (ii) a partially relevant early passage can suppress stronger gold evidence appearing later.
 
 The default paper configuration uses **K = 5**: one Reverse anchor plus four unique global random permutations. Selection is based on *compressed outputs*, not the scores of the original uncompressed orders. At K=1, MORSE reduces to the Reverse anchor. When fewer than K unique permutations exist, the implementation saturates the available permutation space.
 
