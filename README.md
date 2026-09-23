@@ -23,7 +23,6 @@ MORSE is a **compression-aware global context-order search** method for query-co
   </a>
 </p>
 
-[View original vector PDF](assets/figure1_left_stats_2panel.pdf)
 
 **Figure 1b · Controlled information-preemption pair swap**
 
@@ -33,7 +32,6 @@ MORSE is a **compression-aware global context-order search** method for query-co
   </a>
 </p>
 
-[View original vector PDF](assets/pair_swap_current_figure.pdf)
 
 Both previews above are rendered directly from the **original manuscript PDFs**, not newly designed diagrams. The first shows how changing context order affects supporting-fact recall under identical compression; the second illustrates an evidence-first intervention that changes only one context pair.
 
