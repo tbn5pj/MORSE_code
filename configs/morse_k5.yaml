@@ -1,0 +1,7 @@
+compressor: 1p
+K: 5
+seed: 42
+mode: fast
+gpus: [0, 1, 2, 3, 4]
+resume: true
+

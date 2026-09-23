@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "morse-compression"
+version = "1.0.0"
+description = "Compression-aware global context-order search"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = ["torch>=2.4", "transformers>=4.46,<5", "PyYAML>=6"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+include = ["morse*", "runtime*", "evaluation*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,11 @@
+{
+  "example_id": "minimal-distributable-example",
+  "query": "Which city is home to the Eiffel Tower?",
+  "target_budget": 28,
+  "contexts": [
+    {"id": "c0", "title": "Eiffel Tower", "sentences": ["The Eiffel Tower is in Paris.", "It opened in 1889."]},
+    {"id": "c1", "title": "Berlin", "sentences": ["Berlin is the capital of Germany."]},
+    {"id": "c2", "title": "Paris", "sentences": ["Paris is the capital of France."]}
+  ]
+}
+

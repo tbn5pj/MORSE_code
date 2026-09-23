@@ -1,0 +1,14 @@
+{
+  "candidate_stream_cases": 500,
+  "candidate_stream_failures": 0,
+  "validated_1p_searches": 30,
+  "validated_1p_parity_failures": 0,
+  "isd_spotcheck_examples": 1,
+  "isd_deletion_trace_exact": true,
+  "isd_retained_ids_exact": true,
+  "isd_used_tokens_exact": true,
+  "isd_j_b_max_abs_error": 0.0,
+  "quality_table_cells_match": 27,
+  "quality_table_cells_total": 27,
+  "population_hash": "6f831dae61c76ef9425506feec1ed6e4046c3bc713c3dd50e2709044901eb2c5"
+}

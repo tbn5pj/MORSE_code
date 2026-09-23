@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+build/
+dist/
+*.egg-info/
+outputs/
+checkpoints/
+
+.DS_Store
+*.log
+*.tmp
+*.pt
+*.pth
+*.safetensors
+model_cache/

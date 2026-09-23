@@ -1,0 +1,8 @@
+input: examples/example_input.json
+output: outputs/example.json
+compressor: 1p
+K: 5
+seed: 42
+mode: reference
+device: cuda:0
+
