@@ -15,12 +15,27 @@ MORSE is a **compression-aware global context-order search** method for query-co
 
 ## The idea
 
-The repository uses the **original manuscript PDFs** for the core visual explanation:
+**Figure 1a · Context-order sensitivity**
 
-- [Figure 1 left: ordering-sensitivity statistics (PDF)](assets/figure1_left_stats_2panel.pdf)
-- [Controlled information-preemption pair swap (PDF)](assets/pair_swap_current_figure.pdf)
+<p align="center">
+  <a href="assets/figure1_left_stats_2panel.pdf">
+    <img src="assets/ordering_sensitivity.png" alt="Original paper figure: distribution of supporting-fact recall over context orderings at 4x and 16x compression" width="490" />
+  </a>
+</p>
 
-Together these figures show that (i) changing context order can substantially change supporting-evidence retention, and (ii) a partially relevant early passage can suppress stronger gold evidence appearing later.
+[View original vector PDF](assets/figure1_left_stats_2panel.pdf)
+
+**Figure 1b · Controlled information-preemption pair swap**
+
+<p align="center">
+  <a href="assets/pair_swap_current_figure.pdf">
+    <img src="assets/information_preemption_pair_swap.png" alt="Original paper figure: preemptor-first and evidence-first context ordering for a controlled pair swap" width="900" />
+  </a>
+</p>
+
+[View original vector PDF](assets/pair_swap_current_figure.pdf)
+
+Both previews above are rendered directly from the **original manuscript PDFs**, not newly designed diagrams. The first shows how changing context order affects supporting-fact recall under identical compression; the second illustrates an evidence-first intervention that changes only one context pair.
 
 The default paper configuration uses **K = 5**: one Reverse anchor plus four unique global random permutations. Selection is based on *compressed outputs*, not the scores of the original uncompressed orders. At K=1, MORSE reduces to the Reverse anchor. When fewer than K unique permutations exist, the implementation saturates the available permutation space.
 
