@@ -3,6 +3,7 @@
 <p align="center"><em>Order evidence first. Search globally. Select what survives.</em></p>
 
 <p align="center">
+  <a href="https://arxiv.org/abs/2609.27380">Paper</a> ·
   <a href="#the-idea">The idea</a> ·
   <a href="#quick-start">Quick start</a> ·
   <a href="#reproducing-the-method">Reproduce the method</a> ·
@@ -11,7 +12,7 @@
 
 MORSE is a **compression-aware global context-order search** method for query-conditioned, extractive multi-context compression. When a sequential compressor scores a sentence relative to preceding contexts, partially relevant early passages can preempt the score of stronger evidence arriving later. MORSE addresses this *information preemption* by combining an evidence-first **Reverse** ordering with global permutation exploration, running the **actual compressor under the target token budget** for every candidate, and selecting the compressed result with the highest reverse query-evidence score, $J_B$.
 
-**Paper:** *MORSE: Multi-Context Ordering via Reverse Scoring for Evidence-Preserving Compression*. The public arXiv link and confirmed author metadata will be added when the preprint is available.
+**Paper:** [MORSE: Multi-Context Ordering via Reverse Scoring for Evidence-Preserving Compression](https://arxiv.org/abs/2609.27380) · [PDF](https://arxiv.org/pdf/2609.27380) · arXiv:2609.27380.
 
 ## The idea
 
@@ -136,4 +137,4 @@ Candidate streams depend on example identity, namespace and seed. In fast mode, 
 
 ## Citation and license
 
-If MORSE is useful in your research, cite the paper after its public arXiv record is available. A complete BibTeX/CITATION.cff entry will be added after the authors and arXiv identifier are confirmed. The code is provided under the [MIT License](LICENSE). Third-party model checkpoints and datasets retain their own terms.
+If MORSE is useful in your research, please cite the [arXiv preprint](https://arxiv.org/abs/2609.27380) (arXiv:2609.27380). The code is provided under the [MIT License](LICENSE). Third-party model checkpoints and datasets retain their own terms.
